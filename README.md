@@ -1,5 +1,4 @@
 # tictactoe
-Tic Tac Toe
 Hello! This is a simple tic tac toe game on python
 
 Player are prompted to enter a position to place either X or O, via a coordinate system. 

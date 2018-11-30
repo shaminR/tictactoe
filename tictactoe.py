@@ -32,6 +32,7 @@ def inputc():
 
 
 def placer(a, b):  # a is list of coord, b is X or O
+    print("YUHH")
     x = a[0] - 1
     y = a[1] - 1
     if game[x][y] == " ":
@@ -56,6 +57,22 @@ def win_check(x):
     return False
 
 
+def tie_checker():
+    i = j = counter = 0
+    while i < 3:
+        while j < 3:
+            if game[i][j] == "X" or game[i][j] == "O":
+                counter += 1
+            j += 1
+        j = 0
+        i += 1
+
+    if counter >= 9:
+        print("The game is tied!")
+        return True
+    return False
+
+
 def program():
     print("Welcome to Tic Tac Toe deluxe®")
     print("******************************")
@@ -67,6 +84,8 @@ def program():
         if placer(place, "X") == False:
             break
         board_draw2()
+        if tie_checker() == True:
+            break
         if win_check("X") == True:
             print("Congrats! player 1 wins!")
             break
@@ -75,6 +94,8 @@ def program():
         if placer(place, "O") == False:
             break
         board_draw2()
+        if tie_checker() == True:
+            break
         if win_check("O") == True:
             print("Congrats! player 2 wins!")
             break

@@ -89,7 +89,7 @@ def program():
         if win_check("X") == True:
             print("Congrats! player 1 wins!")
             break
-        print("Player 2, enter a coordinate to place Y (x, y): ")
+        print("Player 2, enter a coordinate to place O (x, y): ")
         place = inputc()
         if placer(place, "O") == False:
             break

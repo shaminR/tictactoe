@@ -32,7 +32,6 @@ def inputc():
 
 
 def placer(a, b):  # a is list of coord, b is X or O
-    print("YUHH")
     x = a[0] - 1
     y = a[1] - 1
     if game[x][y] == " ":

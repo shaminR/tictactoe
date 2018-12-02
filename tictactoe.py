@@ -73,7 +73,7 @@ def tie_checker():
 
 
 def program():
-    print("Welcome to Tic Tac Toe deluxe®")
+    print("\nWelcome to Tic Tac Toe deluxe®")
     print("******************************")
     print("X goes first")
     place = [0, 0]
